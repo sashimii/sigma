@@ -1,0 +1,204 @@
+.lol {
+	margin: 90px;
+}
+
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(polina.jpg) no-repeat;
+	background-size: cover;
+}
+
+/* Nav Bar Styles */
+.top-bar-section ul li {
+	background: transparent;
+}
+.slashes {
+	font-size: 2rem;
+	color:white;
+	font-weight: 700;
+	margin-top:-3px;
+}
+.top-bar-section ul li > a {
+	font-size: 1.5rem;
+	font-weight:800;
+	text-transform: uppercase;
+
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: transparent;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	color: rgba(255,255,255,0.5);
+	background: transparent;
+}
+	/* Logo Styles */
+
+	.logo {
+		margin-left: 75px;
+		margin-top: 50px;
+		width: 175px;
+	}
+
+.top-nav-section {
+	margin-top: 100px !important;
+	margin-right: 75px !important;
+	li {
+		a {
+			font-size: 3rem;
+		}
+	}
+}
+
+/* Transparency Rules */
+.transparent {
+	background: transparent;
+}
+.semi-transparent {
+	background: rgba(0,0,0,0.5);
+}
+.quarter-transparent {
+	background: rgba(0,0,0,0.25);
+}
+
+/* Size Styles */
+.screen-size-height {
+	height:1080px;
+}
+
+
+/* Opening Styles */
+
+.blacken-font {
+	font-weight: 800;
+}
+.thin-font {
+	font-weight: 100;
+}
+.white {
+	color: white;
+}
+
+#site-title {
+	.titling {
+		font-size: 3.45rem;
+	}
+	.sub-titling {
+		font-size: 2.47rem;
+	}
+	.capabilities {
+		font-size: 1.02rem;
+	}
+}
+
+.squeeze-top {
+	margin-top:-15px;
+}
+.squeeze-between {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.margin-top {
+	margin-top: 75px;
+}
+
+.vertical-centered {
+	margin-top: 375px;
+}
+
+.section {
+	background: white;
+	width:100%;
+	height: 600px;
+}
+
+.bg-white {
+	background: white;
+}
+
+.height-600px {
+	height: 600px;
+}
+
+.longer {
+	height:1000px;
+}
+
+#mapping {
+
+	.column, .columns {
+		padding-left: 0rem !important;
+		padding-right: 0rem !important;
+	}
+}
+
+
+.heading-colour {
+	color: #13437e;
+}
+
+#map {
+	background: url('../assets/map.jpg');
+	background-position: center;
+	height: 600px;
+}
+
+.item {
+	background: url('../assets/item.jpg') center center no-repeat;
+	//background-attachment:fixed;
+	height: 1000px;
+	width: 100%;
+	.column, .columns {
+		padding-left: 0rem !important;
+		padding-right: 0rem !important;
+	}
+}
+.materials {
+	background: url('../assets/materials.jpg') bottom center no-repeat;
+	//background-attachment:fixed;
+	height: 1000px;
+	width: 100%;
+	&:hover {
+	opacity: 1;
+   transition: fadein .25s ease-in-out;
+   -moz-transition: fadein .25s ease-in-out;
+   -webkit-transition: fadein .25s ease-in-out;
+   }
+   .column, .columns {
+		padding-left: 0rem !important;
+		padding-right: 0rem !important;
+	}
+}
+
+.illusion {
+	background: url('../assets/illusion2.png');
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.item-pic {
+	background: url('../assets/item.jpg') center center no-repeat;
+	background-attachment:fixed;
+}
+.capabilities {
+	font-size: 1.27rem;
+}
+
+.remove-margin-top {
+	margin-top: -0.2rem;
+}
+
+.pad-top {
+	padding-top: 75px;
+}
