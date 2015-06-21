@@ -92,17 +92,26 @@
       <div class="small-12 medium-6 columns bg-white longer">
         <div class="small-10 medium-9 columns small-centered bg-white">
           <h1 class="heading-colour text-right pad-top"><span class="thin-font">Our</span> <span class="blacken-font">Capabilities</span></h1>
-          <h3 class="capabilities heading-colour text-right">
-            <a ng-click="sigma.switcheroo(1)">Machinery</a> 
-          </h3> 
-            {{sigma.picture.name}}
-          <h3 class="capabilities heading-colour text-right">
-            <a ng-click="sigma.switcheroo(0)">Materials</a> 
-          </h3>
-          <h3 class="capabilities heading-colour text-right"> 
-            <a ng-click="#">Industries</a>
-          </h3> 
-          
+          <ul class="tabs right" data-tab>
+            <li class="tab-title active"><a href="#panel1">Tab 1</a></li>
+            <li class="tab-title"><a href="#panel2">Tab 2</a></li>
+            <li class="tab-title"><a href="#panel3">Tab 3</a></li>
+            <li class="tab-title"><a href="#panel4">Tab 4</a></li>
+          </ul>
+          <div class="tabs-content right">
+            <div class="content active" id="panel1">
+              <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+            </div>
+            <div class="content" id="panel2">
+              <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+            </div>
+            <div class="content" id="panel3">
+              <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+            </div>
+            <div class="content" id="panel4">
+              <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="medium-6 columns no-padding">
