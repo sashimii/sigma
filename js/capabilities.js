@@ -1,7 +1,8 @@
 (function(){
   var pictures = [
-  	{name:'item'},
-  	{name:'materials'}
+  	{name:'materials'},
+    {name: 'machinery'},
+  	{name:'item'}
   	];
   var app = angular.module('sigmaApp', []);
   app.controller('SigmaController', function(){

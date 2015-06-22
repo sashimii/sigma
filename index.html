@@ -69,7 +69,7 @@
       <div class="medium-6 columns" id="map">
         
       </div>
-      <div class="small-12 medium-6 columns">
+      <div class="small-12 medium-6 columns height-600px bg-white">
         <div class="small-10 medium-9 columns small-centered margin-top">
           <h1 class="heading-colour"><span class="thin-font">About</span> <span class="blacken-font">Sigma</span></h1>
 
@@ -77,56 +77,72 @@
             Founded in 2010, Sigma Metals a Brampton, Ontario based sheet metal fabricator. We always look forward to providing you outstanding quality of service and quality manufacturing. 
           </p>
           <p class="text-justify">
-            Equipped with state of the art machinery, SIGMA METALS’ can supply, but is not limited to, the telecommunications, medical, industrial automation, transportation, and security sectors. 
+            We're here to provide turnkey solutions, and we can be your one stop shop between your blueprints and your end product.
           </p>
           <p class="text-justify">
-            We work with a variety of materials, chief amongst them being: steel, stainless steel, aluminum, magnesium, titanium, plastics, delrin, inconel, brass, copper, and more. 
+            As a result, for us our customers are also our partners. With this state of mind, we're committed to provide each of our clients the same high quality service.
           </p>
           <p class="text-justify">
-            Ultimately, we are capable of providing full custom metalwork solutions for your needs. 
+            Ultimately, we are dedicated in providing you quality products using state of the art technologies and production methedologies. Our engineering expertise and our CNC machinery provide for a competitive edge in the world of precision metalwork.
           </p>
-          </div>
+        </div>
       </div>
     </div>
-    <section ng-controller="SigmaController as sigma">
-      <div class="small-12 medium-6 columns bg-white longer">
-        <div class="small-10 medium-9 columns small-centered bg-white show-for-medium-up">
+    <div ng-controller="SigmaController as sigma">
+      <div class="small-12 medium-6 columns bg-white height-600px" ng-init="sigma.pictureIndex = 0">
+        <div class="small-10 medium-9 columns small-centered bg-white">
           <h1 class="heading-colour text-right pad-top"><span class="thin-font">Our</span> <span class="blacken-font">Capabilities</span></h1>
           <ul class="tabs right" data-tab>
-            <li class="tab-title active"><a href="#panel1" ng-click="sigma.switcheroo(1)">Materials</a></li>
-            <li class="tab-title"><a href="#panel2" ng-click="sigma.switcheroo(0)">Machinery</a></li>
+            <li class="tab-title active"><a href="#panel1" ng-click="sigma.switcheroo(0)">Materials</a></li>
+            <li class="tab-title"><a href="#panel2" ng-click="sigma.switcheroo(1)">Machinery</a></li>
             <li class="tab-title"><a href="#panel3">Industries</a></li>
           </ul>
           <div class="tabs-content right">
             <div class="content active" id="panel1">
-              <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+              <p class="text-justify medium-8 right">
+                We work with a variety of materials. Some examples include:
+              </p>
+              <p class="clearfix remove-margin-top">
+                <ul class='right remove-margin-top'>
+                  <li>Steel & Stainless Steel</li>
+                  <li>Aluminium</li>
+                  <li>Magnesium</li>
+                  <li>Titanium</li>
+                  <li>Plastics</li>
+                  <li>Delrin</li>
+                  <li>Inconel</li>
+                  <li>Brass</li>
+                  <li>Copper & more</li>
+                </ul>
+              </p>
+      
             </div>
             <div class="content" id="panel2">
-              <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+              <p class="text-justify medium-8 right">
+                This is the second panel of the basic tab example. This is the second panel of the basic tab example.
+              </p>
             </div>
             <div class="content" id="panel3">
-              <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+              <p class="text-justify medium-8 right">
+                Equipped with state of the art machinery, SIGMA METALS’ can supply, but is not limited to, the telecommunications, medical, industrial automation, transportation, and security sectors. 
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div class="medium-6 columns no-padding">
-        <div class="{{sigma.picture[sigma.pictureIndex].name}}">
+        <div class="{{sigma.picture[sigma.pictureIndex].name}} height-600px">
           <!-- To Remain Empty -->
         </div>
       </div>
-    </section>
-    <div class="item">
-        <!-- To Remain Empty -->
-
     </div>
-    <section>
+    <div>
       <div class="section illusion longer">
-        <div class="small-10 medium-3 columns small-centered medium-centered">
-          <h1 class="white remove-margin-top text-center pad-top"><span class="thin-font">Ask for a</span> <span class="blacken-font">Quote</span></h1>
+        <div class="small-10 medium-3 columns margin-top">
+          <h1 class="white remove-margin-top small-text-center"><span class="thin-font">Ask for a</span> <span class="blacken-font">Quote</span></h1>
         </div>
       </div>
-    </section>
+    </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>

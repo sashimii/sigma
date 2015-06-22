@@ -152,10 +152,11 @@ video#bgvid {
 	height: 600px;
 }
 
+
+//Background Images
 .item {
 	background: url('../assets/item.jpg') center center no-repeat;
 	//background-attachment:fixed;
-	height: 1000px;
 	width: 100%;
 	.column, .columns {
 		padding-left: 0rem !important;
@@ -163,9 +164,24 @@ video#bgvid {
 	}
 }
 .materials {
-	background: url('../assets/materials.jpg') bottom center no-repeat;
+	background: url('../assets/materials.jpg') center center no-repeat;
 	//background-attachment:fixed;
-	height: 1000px;
+	width: 100%;
+	&:hover {
+	opacity: 1;
+   transition: fadein .25s ease-in-out;
+   -moz-transition: fadein .25s ease-in-out;
+   -webkit-transition: fadein .25s ease-in-out;
+   }
+   .column, .columns {
+		padding-left: 0rem !important;
+		padding-right: 0rem !important;
+	}
+}
+
+.machinery {
+	background: url('../assets/machinery.jpg') center left no-repeat;
+	//background-attachment:fixed;
 	width: 100%;
 	&:hover {
 	opacity: 1;
@@ -201,4 +217,8 @@ video#bgvid {
 
 .pad-top {
 	padding-top: 75px;
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+    padding: 0.5rem 1rem;
 }
