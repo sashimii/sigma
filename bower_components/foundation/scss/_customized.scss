@@ -146,12 +146,17 @@ video#bgvid {
 	color: #13437e;
 }
 
+#sigma {
+	background: url('../assets/sigma.jpg');
+	background-position: center center;
+	height: 600px;
+	background-size: 1000px;
+}
 #map {
 	background: url('../assets/map.jpg');
 	background-position: center;
 	height: 600px;
 }
-
 
 //Background Images
 .item {
@@ -197,6 +202,22 @@ video#bgvid {
 
 .illusion {
 	background: url('../assets/illusion2.png');
+}
+
+.quote {
+	background: url('../assets/quote.jpg') center left no-repeat;
+	//background-attachment:fixed;
+	width: 100%;
+	&:hover {
+		opacity: 1;
+		transition: fadein .25s ease-in-out;
+		-moz-transition: fadein .25s ease-in-out;
+		-webkit-transition: fadein .25s ease-in-out;
+	}
+	.column, .columns {
+		padding-left: 0rem !important;
+		padding-right: 0rem !important;
+	}
 }
 
 .no-padding {

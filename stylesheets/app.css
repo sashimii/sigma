@@ -9616,91 +9616,117 @@ video#bgvid {
 }
 
 /* line 149, ../bower_components/foundation/scss/_customized.scss */
+#sigma {
+  background: url("../assets/sigma.jpg");
+  background-position: center center;
+  height: 600px;
+  background-size: 1000px;
+}
+
+/* line 155, ../bower_components/foundation/scss/_customized.scss */
 #map {
   background: url("../assets/map.jpg");
   background-position: center;
   height: 600px;
 }
 
-/* line 157, ../bower_components/foundation/scss/_customized.scss */
+/* line 162, ../bower_components/foundation/scss/_customized.scss */
 .item {
   background: url("../assets/item.jpg") center center no-repeat;
   width: 100%;
 }
-/* line 161, ../bower_components/foundation/scss/_customized.scss */
+/* line 166, ../bower_components/foundation/scss/_customized.scss */
 .item .column, .item .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 166, ../bower_components/foundation/scss/_customized.scss */
+/* line 171, ../bower_components/foundation/scss/_customized.scss */
 .materials {
   background: url("../assets/materials.jpg") center center no-repeat;
   width: 100%;
 }
-/* line 170, ../bower_components/foundation/scss/_customized.scss */
+/* line 175, ../bower_components/foundation/scss/_customized.scss */
 .materials:hover {
   opacity: 1;
   transition: fadein .25s ease-in-out;
   -moz-transition: fadein .25s ease-in-out;
   -webkit-transition: fadein .25s ease-in-out;
 }
-/* line 176, ../bower_components/foundation/scss/_customized.scss */
+/* line 181, ../bower_components/foundation/scss/_customized.scss */
 .materials .column, .materials .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 182, ../bower_components/foundation/scss/_customized.scss */
+/* line 187, ../bower_components/foundation/scss/_customized.scss */
 .machinery {
   background: url("../assets/machinery.jpg") center left no-repeat;
   width: 100%;
 }
-/* line 186, ../bower_components/foundation/scss/_customized.scss */
+/* line 191, ../bower_components/foundation/scss/_customized.scss */
 .machinery:hover {
   opacity: 1;
   transition: fadein .25s ease-in-out;
   -moz-transition: fadein .25s ease-in-out;
   -webkit-transition: fadein .25s ease-in-out;
 }
-/* line 192, ../bower_components/foundation/scss/_customized.scss */
+/* line 197, ../bower_components/foundation/scss/_customized.scss */
 .machinery .column, .machinery .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 198, ../bower_components/foundation/scss/_customized.scss */
+/* line 203, ../bower_components/foundation/scss/_customized.scss */
 .illusion {
   background: url("../assets/illusion2.png");
 }
 
-/* line 202, ../bower_components/foundation/scss/_customized.scss */
+/* line 207, ../bower_components/foundation/scss/_customized.scss */
+.quote {
+  background: url("../assets/quote.jpg") center left no-repeat;
+  width: 100%;
+}
+/* line 211, ../bower_components/foundation/scss/_customized.scss */
+.quote:hover {
+  opacity: 1;
+  transition: fadein .25s ease-in-out;
+  -moz-transition: fadein .25s ease-in-out;
+  -webkit-transition: fadein .25s ease-in-out;
+}
+/* line 217, ../bower_components/foundation/scss/_customized.scss */
+.quote .column, .quote .columns {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+/* line 223, ../bower_components/foundation/scss/_customized.scss */
 .no-padding {
   padding: 0px;
 }
 
-/* line 206, ../bower_components/foundation/scss/_customized.scss */
+/* line 227, ../bower_components/foundation/scss/_customized.scss */
 .item-pic {
   background: url("../assets/item.jpg") center center no-repeat;
   background-attachment: fixed;
 }
 
-/* line 210, ../bower_components/foundation/scss/_customized.scss */
+/* line 231, ../bower_components/foundation/scss/_customized.scss */
 .capabilities {
   font-size: 1.27rem;
 }
 
-/* line 214, ../bower_components/foundation/scss/_customized.scss */
+/* line 235, ../bower_components/foundation/scss/_customized.scss */
 .remove-margin-top {
   margin-top: -0.2rem;
 }
 
-/* line 218, ../bower_components/foundation/scss/_customized.scss */
+/* line 239, ../bower_components/foundation/scss/_customized.scss */
 .pad-top {
   padding-top: 75px;
 }
 
-/* line 222, ../bower_components/foundation/scss/_customized.scss */
+/* line 243, ../bower_components/foundation/scss/_customized.scss */
 .tabs dd > a, .tabs .tab-title > a {
   padding: 0.5rem 1rem;
 }
