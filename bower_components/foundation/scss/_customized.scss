@@ -148,7 +148,7 @@ video#bgvid {
 
 #sigma {
 	background: url('../assets/sigma.jpg');
-	background-position: center center;
+	background-position: center bottom;
 	height: 600px;
 	background-size: 1000px;
 }
@@ -232,6 +232,11 @@ video#bgvid {
 	font-size: 1.27rem;
 }
 
+.button-margin {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
 .remove-margin-top {
 	margin-top: -0.2rem;
 }
@@ -242,4 +247,15 @@ video#bgvid {
 
 .tabs dd > a, .tabs .tab-title > a {
     padding: 0.5rem 1rem;
+}
+
+.margin-right {
+	margin-right: 10px;
+}
+
+.padding-left {
+	padding-left: 20px;
+}
+.margin-left {
+	margin-right: 10px;
 }

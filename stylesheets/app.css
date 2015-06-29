@@ -9618,7 +9618,7 @@ video#bgvid {
 /* line 149, ../bower_components/foundation/scss/_customized.scss */
 #sigma {
   background: url("../assets/sigma.jpg");
-  background-position: center center;
+  background-position: center bottom;
   height: 600px;
   background-size: 1000px;
 }
@@ -9717,16 +9717,37 @@ video#bgvid {
 }
 
 /* line 235, ../bower_components/foundation/scss/_customized.scss */
+.button-margin {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 240, ../bower_components/foundation/scss/_customized.scss */
 .remove-margin-top {
   margin-top: -0.2rem;
 }
 
-/* line 239, ../bower_components/foundation/scss/_customized.scss */
+/* line 244, ../bower_components/foundation/scss/_customized.scss */
 .pad-top {
   padding-top: 75px;
 }
 
-/* line 243, ../bower_components/foundation/scss/_customized.scss */
+/* line 248, ../bower_components/foundation/scss/_customized.scss */
 .tabs dd > a, .tabs .tab-title > a {
   padding: 0.5rem 1rem;
+}
+
+/* line 252, ../bower_components/foundation/scss/_customized.scss */
+.margin-right {
+  margin-right: 10px;
+}
+
+/* line 256, ../bower_components/foundation/scss/_customized.scss */
+.padding-left {
+  padding-left: 20px;
+}
+
+/* line 259, ../bower_components/foundation/scss/_customized.scss */
+.margin-left {
+  margin-right: 10px;
 }
