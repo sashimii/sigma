@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="assets/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="bower_components/Buttons/css/buttons.min.css" />
-
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>-->
     <script src="js/angular.min.js"></script>
@@ -22,23 +21,23 @@
           <section class="top-bar-section">
             <ul class="left">
               <li>
-                <img src="assets/logo.png" class="logo"/>
+                <img src="assets/logo.png" class="logo logoFadeIn"/>
               </li>
             </ul>
             <ul class="right transparent top-nav-section">
-              <li class="transparent">
+              <li class="transparent navFadeIn">
                 <a href="#about" class="transparent">
                   About Us
                 </a>
               </li>
-              <li class="slashes squeeze-between">/</li>
-              <li class="transparent">
+              <li class="slashes squeeze-between navFadeIn">/</li>
+              <li class="transparent navFadeIn">
                 <a href="#capabilities" class="transparent blacken-font">
                   Capabilities
                 </a>
               </li>
-              <li class="slashes squeeze-between">/</li>
-              <li class="transparent">
+              <li class="slashes squeeze-between navFadeIn">/</li>
+              <li class="transparent navFadeIn">
                 <a href="#quote" class="transparent blacken-font">
                   Ask for a Quote
                 </a>
@@ -46,7 +45,7 @@
             </ul>
           </section>
         </nav>
-        <div class="row vertical-centered" id="site-title">
+        <div class="row vertical-centered headingFadeIn" id="site-title">
           <div class="large-6 medium-9 columns small-centered">
             <h1>
               <span class="blacken-font white titling">Turn Key Solutions</span>
@@ -73,14 +72,16 @@
       <source src="polina.mp4" type="video/mp4">
     </video>
     <!-- SECTION 2 -->
-    <div class="section" id="mapping">
+    <div class="section" id="mapping" name="about">
+      <!-- TIME TO GO MOBILE -->
         <div class="medium-6 columns height-800px" id="map">
+          <a name="about"></a>
           <div class="small-12 medium-6 columns transluscent-white show-for-small-only padding-top-bot ">
             <div class="small-10 medium-9 columns small-centered padding-top padding-bottom">
-              <h1 class="heading-colour"><a name="about"><span class="thin-font">About</span> <span class="blacken-font">Sigma</span></a></h1>
+              <h1 class="heading-colour"><span class="thin-font">About</span> <span class="blacken-font">Sigma</span></h1>
 
               <p class="text-justify">
-                Founded in 2010, Sigma Metals a Brampton, Ontario based sheet metal fabricator. We always look forward to providing you outstanding quality of service and quality manufacturing.
+                Founded in 2010, Sigma Metals is a Brampton, Ontario based sheet metal fabricator. We always look forward to providing you outstanding quality of service and quality manufacturing.
               </p>
               <p class="text-justify">
                 We're here to provide turnkey solutions, and we can be your one stop shop between your blueprints and your end product.
@@ -96,7 +97,7 @@
       </div>
       <div class="small-12 medium-6 columns height-600px bg-white show-for-medium-up">
         <div class="small-10 medium-9 columns small-centered margin-top">
-          <h1 class="heading-colour"><a name="about"><span class="thin-font">About</span> <span class="blacken-font">Sigma</span></a></h1>
+          <h1 class="heading-colour"><span class="thin-font">About</span> <span class="blacken-font">Sigma</span></h1>
 
           <p class="text-justify">
             Founded in 2010, Sigma Metals a Brampton, Ontario based sheet metal fabricator. We always look forward to providing you outstanding quality of service and quality manufacturing.
@@ -113,61 +114,21 @@
         </div>
       </div>
     </div>
-    <div ng-controller="SigmaController as sigma">
+    <div ng-controller="SigmaController as sigma" name="capabilities">
       <div class="small-12 medium-6 columns bg-white height-600px" ng-init="sigma.pictureIndex = 0">
         <div class="small-12 medium-9 columns small-centered bg-white">
-          <h1 class="heading-colour text-right pad-top"><a name="capabilities"><span class="thin-font">Our</span> <span class="blacken-font">Capabilities</span></a></h1>
+          <h1 class="heading-colour text-right pad-top"><span class="thin-font">Our</span> <span class="blacken-font">Capabilities</span></h1>
           <ul class="tabs right" data-tab>
-            <li class="tab-title active"><a href="#panel1" ng-click="sigma.switcheroo(0)">Materials</a></li>
-            <li class="tab-title"><a href="#panel2" ng-click="sigma.switcheroo(1)">Machinery</a></li>
-            <li class="tab-title"><a href="#panel3" ng-click="sigma.switcheroo(2)">Industries</a></li>
+            <li class="tab-title {{sigma.picture[0].tab}}"><a ng-click="sigma.switcheroo(0)">Materials</a></li>
+            <li class="tab-title {{sigma.picture[1].tab}}"><a ng-click="sigma.switcheroo(1)">Machinery</a></li>
+            <li class="tab-title {{sigma.picture[2].tab}}"><a ng-click="sigma.switcheroo(2)">Industries</a></li>
           </ul>
           <div class="tabs-content right">
             <div class="content active" id="panel1">
-              <p class="text-justify small-12 medium-8 right">
-                We work with a variety of materials. These include but are not limited to: <br/>
-                <span class="radius secondary label">Steel</span>
-                <span class="radius secondary label">Stainless Steel</span>
-                <span class="radius secondary label">Aluminium</span>
-                <span class="radius secondary label">Magnesium</span>
-                <span class="radius secondary label">Titanium</span>
-                <span class="radius secondary label">Plastics</span>
-                <span class="radius secondary label">Delrin</span>
-                <span class="radius secondary label">Inconel</span>
-                <span class="radius secondary label">Brass</span>
-                <span class="radius secondary label">Copper</span>
-                <span class="radius secondary label">etc</span>
-                <!--<ul class='right remove-margin-top'>
-                  <li>Steel & Stainless Steel</li>
-                  <li>Aluminium</li>
-                  <li>Magnesium</li>
-                  <li>Titanium</li>
-                  <li>Plastics</li>
-                  <li>Delrin</li>
-                  <li>Inconel</li>
-                  <li>Brass</li>
-                  <li>Copper & more</li>
-                </ul> -->
-              </p>
-
-            </div>
-            <div class="content" id="panel2">
-              <p class="text-justify medium-8 right">
-                We house a variety of machinery, ranging from CNC milling and lathe, manual milling and lathe, to machines that help us control the quality of our products, such as CMM.
-              </p>
-            </div>
-            <div class="content" id="panel3">
-              <p class="text-justify medium-8 right">
-                Equipped with state of the art machinery, SIGMA METALS’ can supply, but is not limited to:
+              <p class="text-justify small-12 medium-8 right text-justified">
+                {{sigma.picture[sigma.pictureIndex].content}}
                 <br/>
-                <span class="radius secondary label">telecommunications</span>
-                <span class="radius secondary label">medical</span>
-                <span class="radius secondary label">industrial automation</span>
-                <span class="radius secondary label">transportation</span>
-                <span class="radius secondary label">security</span>
-                <span class="radius secondary label">aerospace</span>
-                <span class="radius secondary label">lighting</span>
-                <span class="radius secondary label">heavy machinery</span>
+                <span class="radius secondary label padded" ng-repeat="item in sigma.picture[sigma.pictureIndex].items">{{item}}</span>
               </p>
             </div>
           </div>
@@ -185,9 +146,10 @@
       <div class="medium-6 columns" id="sigma">
 
       </div>
-      <div class="small-12 medium-6 columns height-600px bg-white">
+      <div class="small-12 medium-6 columns height-600px bg-white" name="quote">
+        <!--<a name="quote"></a>-->
         <div class="small-10 medium-9 columns small-centered margin-top">
-          <h1 class="heading-colour"><a name="quote"><span class="thin-font">Ask for a</span> <span class="blacken-font">Quote</span></a></h1>
+          <h1 class="heading-colour"><span class="thin-font">Ask for a</span> <span class="blacken-font">Quote</span></h1>
           <p class="text-justify">
             If you are looking for a quote, you may call or email us at:
           </p>
@@ -250,5 +212,28 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+          }
+        });
+      });
+
+      $(document).ready(function() {
+        $('.logoFadeIn').fadeIn(1500);
+        $('.navFadeIn').delay(500).fadeIn(1500);
+        $('.headingFadeIn').delay(1000).fadeIn(1500);
+      });
+
+    </script>
   </body>
 </html>

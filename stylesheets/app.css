@@ -9861,3 +9861,14 @@ h1.heading-colour a {
     height: auto;
   }
 }
+/* Labels */
+/* line 367, ../bower_components/foundation/scss/_customized.scss */
+.padded {
+  margin: 2px;
+}
+
+/* Fade in Classes */
+/* line 373, ../bower_components/foundation/scss/_customized.scss */
+.logoFadeIn, .navFadeIn, .headingFadeIn {
+  display: none;
+}

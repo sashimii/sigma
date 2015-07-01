@@ -361,3 +361,13 @@ h1.heading-colour a {
 		height: auto;
 	}
 }
+
+/* Labels */
+
+.padded {
+	margin: 2px;
+}
+
+/* Fade in Classes */
+
+.logoFadeIn, .navFadeIn, .headingFadeIn { display: none; }
