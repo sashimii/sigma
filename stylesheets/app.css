@@ -9578,44 +9578,65 @@ video#bgvid {
 }
 
 /* line 114, ../bower_components/foundation/scss/_customized.scss */
+.margin-bottom {
+  margin-bottom: 75px;
+}
+
+/* line 118, ../bower_components/foundation/scss/_customized.scss */
 .vertical-centered {
   margin-top: 375px;
 }
 
-/* line 118, ../bower_components/foundation/scss/_customized.scss */
+/* line 122, ../bower_components/foundation/scss/_customized.scss */
 .section {
   background: white;
   width: 100%;
   height: 600px;
 }
 
-/* line 124, ../bower_components/foundation/scss/_customized.scss */
+/* line 128, ../bower_components/foundation/scss/_customized.scss */
 .bg-white {
   background: white;
 }
 
-/* line 128, ../bower_components/foundation/scss/_customized.scss */
+/* line 133, ../bower_components/foundation/scss/_customized.scss */
+.padding-top-bot {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+/* line 138, ../bower_components/foundation/scss/_customized.scss */
+.transluscent-white {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+/* line 142, ../bower_components/foundation/scss/_customized.scss */
 .height-600px {
   height: 600px;
 }
 
-/* line 132, ../bower_components/foundation/scss/_customized.scss */
+/* line 146, ../bower_components/foundation/scss/_customized.scss */
+.height-800px {
+  height: 800px;
+}
+
+/* line 150, ../bower_components/foundation/scss/_customized.scss */
 .longer {
   height: 1000px;
 }
 
-/* line 138, ../bower_components/foundation/scss/_customized.scss */
+/* line 156, ../bower_components/foundation/scss/_customized.scss */
 #mapping .column, #mapping .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 145, ../bower_components/foundation/scss/_customized.scss */
+/* line 163, ../bower_components/foundation/scss/_customized.scss */
 .heading-colour {
   color: #13437e;
 }
 
-/* line 149, ../bower_components/foundation/scss/_customized.scss */
+/* line 167, ../bower_components/foundation/scss/_customized.scss */
 #sigma {
   background: url("../assets/sigma.jpg");
   background-position: center bottom;
@@ -9623,131 +9644,220 @@ video#bgvid {
   background-size: 1000px;
 }
 
-/* line 155, ../bower_components/foundation/scss/_customized.scss */
+/* line 173, ../bower_components/foundation/scss/_customized.scss */
 #map {
   background: url("../assets/map.jpg");
   background-position: center;
   height: 600px;
 }
 
-/* line 162, ../bower_components/foundation/scss/_customized.scss */
+/* line 180, ../bower_components/foundation/scss/_customized.scss */
 .item {
   background: url("../assets/item.jpg") center center no-repeat;
   width: 100%;
 }
-/* line 166, ../bower_components/foundation/scss/_customized.scss */
+/* line 184, ../bower_components/foundation/scss/_customized.scss */
 .item .column, .item .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 171, ../bower_components/foundation/scss/_customized.scss */
+/* line 189, ../bower_components/foundation/scss/_customized.scss */
 .materials {
   background: url("../assets/materials.jpg") center center no-repeat;
   width: 100%;
 }
-/* line 175, ../bower_components/foundation/scss/_customized.scss */
+/* line 193, ../bower_components/foundation/scss/_customized.scss */
 .materials:hover {
   opacity: 1;
   transition: fadein .25s ease-in-out;
   -moz-transition: fadein .25s ease-in-out;
   -webkit-transition: fadein .25s ease-in-out;
 }
-/* line 181, ../bower_components/foundation/scss/_customized.scss */
+/* line 199, ../bower_components/foundation/scss/_customized.scss */
 .materials .column, .materials .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 187, ../bower_components/foundation/scss/_customized.scss */
+/* line 205, ../bower_components/foundation/scss/_customized.scss */
 .machinery {
   background: url("../assets/machinery.jpg") center left no-repeat;
   width: 100%;
 }
-/* line 191, ../bower_components/foundation/scss/_customized.scss */
+/* line 209, ../bower_components/foundation/scss/_customized.scss */
 .machinery:hover {
   opacity: 1;
   transition: fadein .25s ease-in-out;
   -moz-transition: fadein .25s ease-in-out;
   -webkit-transition: fadein .25s ease-in-out;
 }
-/* line 197, ../bower_components/foundation/scss/_customized.scss */
+/* line 215, ../bower_components/foundation/scss/_customized.scss */
 .machinery .column, .machinery .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 203, ../bower_components/foundation/scss/_customized.scss */
+/* line 220, ../bower_components/foundation/scss/_customized.scss */
+.industry {
+  background: url("../assets/industries.jpg") center left no-repeat;
+  background-size: 1000px;
+  width: 100%;
+}
+/* line 225, ../bower_components/foundation/scss/_customized.scss */
+.industry:hover {
+  opacity: 1;
+  transition: fadein .25s ease-in-out;
+  -moz-transition: fadein .25s ease-in-out;
+  -webkit-transition: fadein .25s ease-in-out;
+}
+/* line 231, ../bower_components/foundation/scss/_customized.scss */
+.industry .column, .industry .columns {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+/* line 236, ../bower_components/foundation/scss/_customized.scss */
 .illusion {
   background: url("../assets/illusion2.png");
 }
 
-/* line 207, ../bower_components/foundation/scss/_customized.scss */
+/* line 240, ../bower_components/foundation/scss/_customized.scss */
 .quote {
   background: url("../assets/quote.jpg") center left no-repeat;
   width: 100%;
 }
-/* line 211, ../bower_components/foundation/scss/_customized.scss */
+/* line 244, ../bower_components/foundation/scss/_customized.scss */
 .quote:hover {
   opacity: 1;
   transition: fadein .25s ease-in-out;
   -moz-transition: fadein .25s ease-in-out;
   -webkit-transition: fadein .25s ease-in-out;
 }
-/* line 217, ../bower_components/foundation/scss/_customized.scss */
+/* line 250, ../bower_components/foundation/scss/_customized.scss */
 .quote .column, .quote .columns {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-/* line 223, ../bower_components/foundation/scss/_customized.scss */
+/* line 256, ../bower_components/foundation/scss/_customized.scss */
 .no-padding {
   padding: 0px;
 }
 
-/* line 227, ../bower_components/foundation/scss/_customized.scss */
+/* line 260, ../bower_components/foundation/scss/_customized.scss */
 .item-pic {
   background: url("../assets/item.jpg") center center no-repeat;
   background-attachment: fixed;
 }
 
-/* line 231, ../bower_components/foundation/scss/_customized.scss */
+/* line 264, ../bower_components/foundation/scss/_customized.scss */
 .capabilities {
   font-size: 1.27rem;
 }
 
-/* line 235, ../bower_components/foundation/scss/_customized.scss */
+/* line 268, ../bower_components/foundation/scss/_customized.scss */
 .button-margin {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-/* line 240, ../bower_components/foundation/scss/_customized.scss */
+/* line 273, ../bower_components/foundation/scss/_customized.scss */
 .remove-margin-top {
   margin-top: -0.2rem;
 }
 
-/* line 244, ../bower_components/foundation/scss/_customized.scss */
+/* line 277, ../bower_components/foundation/scss/_customized.scss */
 .pad-top {
   padding-top: 75px;
 }
 
-/* line 248, ../bower_components/foundation/scss/_customized.scss */
+/* line 281, ../bower_components/foundation/scss/_customized.scss */
 .tabs dd > a, .tabs .tab-title > a {
   padding: 0.5rem 1rem;
 }
 
-/* line 252, ../bower_components/foundation/scss/_customized.scss */
+/* line 285, ../bower_components/foundation/scss/_customized.scss */
 .margin-right {
   margin-right: 10px;
 }
 
-/* line 256, ../bower_components/foundation/scss/_customized.scss */
+/* line 289, ../bower_components/foundation/scss/_customized.scss */
 .padding-left {
   padding-left: 20px;
 }
 
-/* line 259, ../bower_components/foundation/scss/_customized.scss */
+/* line 292, ../bower_components/foundation/scss/_customized.scss */
 .margin-left {
   margin-right: 10px;
+}
+
+/* line 296, ../bower_components/foundation/scss/_customized.scss */
+h1.heading-colour a {
+  color: #13437e;
+}
+
+/* Footer Styles */
+/* line 302, ../bower_components/foundation/scss/_customized.scss */
+.full-width {
+  max-width: 1400px;
+}
+
+/* line 308, ../bower_components/foundation/scss/_customized.scss */
+.footer {
+  background-color: #1f1f1f;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #fff;
+}
+/* line 313, ../bower_components/foundation/scss/_customized.scss */
+.footer i {
+  font-size: 100px;
+}
+
+/* line 319, ../bower_components/foundation/scss/_customized.scss */
+.footer h4 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 10px;
+}
+/* line 327, ../bower_components/foundation/scss/_customized.scss */
+.footer p {
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 335, ../bower_components/foundation/scss/_customized.scss */
+  .footer .columns:nth-child(n+2) {
+    border-left: 1px solid #b3b3b3;
+    min-height: 280px;
+  }
+}
+/* line 342, ../bower_components/foundation/scss/_customized.scss */
+.footer-links {
+  list-style-type: none;
+}
+/* line 344, ../bower_components/foundation/scss/_customized.scss */
+.footer-links a {
+  color: #fff;
+  font-weight: 300;
+  font-size: .8rem;
+}
+/* line 349, ../bower_components/foundation/scss/_customized.scss */
+.footer-links li {
+  margin-top: .5rem;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 40em) {
+  /* line 358, ../bower_components/foundation/scss/_customized.scss */
+  #map {
+    background: url("../assets/map.jpg");
+    background-position: center;
+    height: auto;
+  }
 }

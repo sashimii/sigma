@@ -2,7 +2,7 @@
   var pictures = [
   	{name:'materials'},
     {name: 'machinery'},
-  	{name:'item'}
+  	{name:'industry'}
   	];
   var app = angular.module('sigmaApp', []);
   app.controller('SigmaController', function(){
@@ -16,5 +16,5 @@
    		this.pictureIndex = pictureID;
    	}
 
-  });  
+  });
 })();
