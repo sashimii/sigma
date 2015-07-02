@@ -15,6 +15,66 @@
     <script src="js/capabilities.js" type="text/javascript"></script>
   </head>
   <body>
+    <div class="contain-to-grid sticky show-for-small-only">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: small">
+        <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+              <h1 class="small-text-center"><a href="#">Sigma Metals</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+
+            <section style="left: 0%;" class="top-bar-section">
+              <ul class="right">
+                <li class="divider"></li>
+                <li class="has-dropdown not-click">
+                  <a href="#about" class="">About</a>
+                </li>
+                <li class="divider"></li>
+                <li class="has-dropdown not-click">
+                  <a href="http://foundation.zurb.com/templates.html" class="">Develop</a>
+                  <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="http://foundation.zurb.com/templates.html">Develop</a></li>
+                    <li><a href="http://foundation.zurb.com/templates.html">Add-ons</a></li>
+                    <li><a href="http://foundation.zurb.com/docs">Docs</a></li>
+                    <li><a href="http://foundation.zurb.com/develop/download.html">Download</a></li>
+                    <li><a href="http://foundation.zurb.com/develop/contribute.html">Contribute</a></li>
+                    <li><a href="http://foundation.zurb.com/develop/resources.html">Resources</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li class="has-dropdown not-click">
+                  <a href="http://foundation.zurb.com/support/support.html" class="">Support</a>
+                  <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="http://foundation.zurb.com/support/support.html">Support</a></li>
+                    <li><a href="http://foundation.zurb.com/support/support.html">Support Channels</a></li>
+                    <li><a href="http://foundation.zurb.com/forum">Foundation Forum</a></li>
+                    <li><a href="http://foundation.zurb.com/support/images-and-badges.html">Images &amp; Badges</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li class="has-dropdown not-click">
+                  <a href="../../business/services.html" class="">Business</a>
+                  <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="../../business/services.html">Business</a></li>
+                    <li><a href="../../business/services.html">Services</a></li>
+                    <li><a href="../../business/certification.html">Certification</a></li>
+                    <li><a href="../../business/business-support.html">Business Support</a></li>
+                    <li><a href="../../business/engineering-studios.html">Engineering Studios</a></li>
+                    <li><a href="../../business/training.html">Business Training</a></li>
+                    <li><a href="../../business/design-apps.html">Design Apps</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="http://foundation.zurb.com/docs" class="">Docs</a>
+                </li>
+                <li class="divider"></li>
+                <li class="has-form">
+                  <a href="http://foundation.zurb.com/docs" class="small button">Getting Started</a>
+              </li></ul>
+            </section>
+          </ul>
+      </nav>
+    </div>
     <div>
       <div class="quarter-transparent screen-size-height">
         <nav class="top-bar transparent" data-topbar="">
@@ -113,27 +173,31 @@
       </div>
     </div>
     <div ng-controller="SigmaController as sigma" name="capabilities">
-      <div class="small-12 medium-6 columns bg-white height-600px" ng-init="sigma.pictureIndex = 0">
-        <div class="small-12 medium-9 columns small-centered bg-white">
-          <h1 class="heading-colour text-right pad-top"><span class="thin-font">Our</span> <span class="blacken-font">Capabilities</span></h1>
-          <ul class="tabs right" data-tab>
-            <li class="tab-title {{sigma.picture[0].tab}}"><a ng-click="sigma.switcheroo(0)">Materials</a></li>
-            <li class="tab-title {{sigma.picture[1].tab}}"><a ng-click="sigma.switcheroo(1)">Machinery</a></li>
-            <li class="tab-title {{sigma.picture[2].tab}}"><a ng-click="sigma.switcheroo(2)">Industries</a></li>
-          </ul>
-          <div class="tabs-content right">
-            <div class="content active" id="panel1">
-              <p class="text-justify small-12 medium-8 right text-justified">
-                {{sigma.picture[sigma.pictureIndex].content}}
-                <br/>
-                <span class="radius secondary label padded" ng-repeat="item in sigma.picture[sigma.pictureIndex].items">{{item}}</span>
-              </p>
+
+        <div class="small-12 medium-6 columns height-600px small-{{sigma.picture[sigma.pictureIndex].name}} remove-sides" ng-init="sigma.pictureIndex = 0">
+          <div class="transluscent-white full-width">
+            <div class="small-12 medium-9 columns small-centered">
+              <h1 class="heading-colour text-right pad-top"><span class="thin-font">Our</span> <span class="blacken-font">Capabilities</span></h1>
+              <ul class="tabs right" data-tab>
+                <li class="tab-title {{sigma.picture[0].tab}}"><a ng-click="sigma.switcheroo(0)">Materials</a></li>
+                <li class="tab-title {{sigma.picture[1].tab}}"><a ng-click="sigma.switcheroo(1)">Machinery</a></li>
+                <li class="tab-title {{sigma.picture[2].tab}}"><a ng-click="sigma.switcheroo(2)">Industries</a></li>
+              </ul>
+              <div class="tabs-content right">
+                <div class="content active" id="panel1">
+                  <p class="text-justify small-12 medium-8 right text-justified">
+                    {{sigma.picture[sigma.pictureIndex].content}}
+                    <br/>
+                    <span class="radius secondary label padded" ng-repeat="item in sigma.picture[sigma.pictureIndex].items">{{item}}</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+
       <div class="medium-6 columns no-padding">
-        <div class="{{sigma.picture[sigma.pictureIndex].name}} height-600px">
+        <div class="{{sigma.picture[sigma.pictureIndex].name}} height-600px show-for-medium-up">
           <!-- To Remain Empty -->
         </div>
       </div>
@@ -141,58 +205,52 @@
 
     <!-- Section 3 -->
     <div class="section" id="mapping">
-      <div class="medium-6 columns" id="sigma">
+      <div class="medium-6 columns show-for-medium-up" id="sigma">
 
       </div>
-      <div class="small-12 medium-6 columns height-600px bg-white" name="quote">
+      <div class="small-12 medium-6 columns height-600px bg-white small-illusion" name="quote">
         <!--<a name="quote"></a>-->
         <div class="small-10 medium-9 columns small-centered margin-top">
-          <h1 class="heading-colour"><span class="thin-font">Ask for a</span> <span class="blacken-font">Quote</span></h1>
-          <p class="text-justify">
+          <h1 class="heading-colour small-white"><span class="thin-font">Ask for a</span> <span class="blacken-font">Quote</span></h1>
+          <p class="text-justify small-white">
             If you are looking for a quote, you may call or email us at:
           </p>
           <div class="small-12 columns button-margin">
             <a href="tel:19058462700"><button class="button button-action button-circle button-large margin-left"><i class="fi-telephone large"></i></button></a>
-            <span class="padding-left">(905) 846-2700</span>
+            <span class="padding-left small-white">(905) 846-2700</span>
           </div>
           <div class="small-12 columns button-margin">
             <a href="mailto:rfq@sigmametals.ca"><button class="button button-action button-circle button-large margin-left"><i class="fi-mail large"></i></button></a>
-            <span class="padding-left">rfq@sigmametals.ca</span>
+            <span class="padding-left small-white">rfq@sigmametals.ca</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="row full-width"></div>
+    <div class="sub-footer small-blue small-12 columns">
+      <div class="small-12 columns">
+        <div class="small-12 medium-3 columns small-centered">
+          <img src="assets/break.png"/>
+        </div>
+      </div>
     </div>
-    <footer class="footer">
-      <div class="row full-width">
-        <div class="small-12 medium-3 large-4 columns">
-          <i class="fi-laptop"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+    <footer class="footer small-blue small-12 columns">
+      <div>
+        <div class="small-12 medium-3 large-2 columns">
+          <h4 class="medium-text-left">We are at</h4>
+          <address class="medium-text-left thin-font">
+            52 Van Kirk Drive,<br/>
+            Brampton ON,<br/>
+            L7A 1B1<br/>
+            Tel: (905) 846-2700<br/>
+            Fax: (905) 846-2600<br/>
+          </address>
         </div>
-        <div class="small-12 medium-3 large-4 columns">
-          <i class="fi-html5"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
-        </div>
-        <div class="small-6 medium-3 large-2 columns">
-          <h4>Work With Me</h4>
-          <ul class="footer-links">
-            <li><a href="#">What I Do</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">FAQ's</a></li>
-          <ul>
-        </div>
-        <div class="small-6 medium-3 large-2 columns">
-          <h4>Follow Me</h4>
-          <ul class="footer-links">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Dribbble</a></li>
+        <div class="small-12 medium-3 large-2 columns end">
+          <h4 class="medium-text-left">Message Us</h4>
+          <ul class="footer-links medium-text-left">
+            <li><a href="mailto:utailor@sigmametals.ca" class="thin-font">Umesh Tailor</a></li>
+            <li><a href="mailto:btopiwala@sigmametals.ca" class="thin-font">Bhavesh Topiwala</a></li>
+            <li><a href="mailto:jtopiwala@sigmametals.ca" class="thin-font">Jitesh Topiwala</a></li>
           <ul>
         </div>
       </div>

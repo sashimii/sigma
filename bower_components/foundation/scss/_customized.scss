@@ -171,6 +171,10 @@
 	background: rgba(255,255,255,0.75);
 }
 
+.transluscent-black {
+	background: rgba(0,0,0,0.25);
+}
+
 .height-600px {
 	height: 600px;
 }
@@ -222,12 +226,9 @@
 	background: url('../assets/materials.jpg') center center no-repeat;
 	//background-attachment:fixed;
 	width: 100%;
-	&:hover {
-	opacity: 1;
    transition: fadein .25s ease-in-out;
    -moz-transition: fadein .25s ease-in-out;
    -webkit-transition: fadein .25s ease-in-out;
-   }
    .column, .columns {
 		padding-left: 0rem !important;
 		padding-right: 0rem !important;
@@ -238,12 +239,10 @@
 	background: url('../assets/machinery.jpg') center left no-repeat;
 	//background-attachment:fixed;
 	width: 100%;
-	&:hover {
 	opacity: 1;
    transition: fadein .25s ease-in-out;
    -moz-transition: fadein .25s ease-in-out;
    -webkit-transition: fadein .25s ease-in-out;
-   }
    .column, .columns {
 		padding-left: 0rem !important;
 		padding-right: 0rem !important;
@@ -254,12 +253,11 @@
 	background-size: 1000px;
 	//background-attachment:fixed;
 	width: 100%;
-	&:hover {
 	opacity: 1;
    transition: fadein .25s ease-in-out;
    -moz-transition: fadein .25s ease-in-out;
    -webkit-transition: fadein .25s ease-in-out;
-   }
+
    .column, .columns {
 		padding-left: 0rem !important;
 		padding-right: 0rem !important;
@@ -347,6 +345,16 @@ h1.heading-colour a {
   }
 }
 
+.sub-footer {
+  background-color: /*#2980b9*/ #242424;
+	padding: 25px 0px;
+  text-align: center;
+  color: #fff;
+  i {
+    font-size: 100px;
+  }
+}
+
 .footer {
   h4 {
     color: #fff;
@@ -365,7 +373,6 @@ h1.heading-colour a {
 @media only screen and (min-width: 40.063em) {
 .footer {
   .columns:nth-child(n+2) {
-     border-left: 1px solid scale-color(#fff, $lightness: -30%);
      min-height: 280px;
   }
  }
@@ -433,47 +440,83 @@ h1.heading-colour a {
 		background: url('../assets/materials.jpg') center center no-repeat;
 		//background-attachment:fixed;
 		width: 100%;
-		&:hover {
-		opacity: 1;
-	   transition: fadein .25s ease-in-out;
-	   -moz-transition: fadein .25s ease-in-out;
-	   -webkit-transition: fadein .25s ease-in-out;
-	   }
-	   .column, .columns {
-			padding-left: 0rem !important;
-			padding-right: 0rem !important;
-		}
+		background-color: rgba(255,255,255,0.75);
 	}
 
 	.small-machinery {
 		background: url('../assets/machinery.jpg') center left no-repeat;
 		//background-attachment:fixed;
 		width: 100%;
-		&:hover {
-		opacity: 1;
-	   transition: fadein .25s ease-in-out;
-	   -moz-transition: fadein .25s ease-in-out;
-	   -webkit-transition: fadein .25s ease-in-out;
-	   }
-	   .column, .columns {
-			padding-left: 0rem !important;
-			padding-right: 0rem !important;
-		}
 	}
 	.small-industry {
 		background: url('../assets/industries.jpg') center left no-repeat;
 		background-size: 1000px;
 		//background-attachment:fixed;
 		width: 100%;
-		&:hover {
-		opacity: 1;
-	   transition: fadein .25s ease-in-out;
-	   -moz-transition: fadein .25s ease-in-out;
-	   -webkit-transition: fadein .25s ease-in-out;
-	   }
-	   .column, .columns {
-			padding-left: 0rem !important;
-			padding-right: 0rem !important;
-		}
+
 	}
+
+	.small-illusion {
+			background: url('../assets/illusion2.png');
+	}
+
+	.small-white {
+		color: white;
+	}
+
+	.footer {
+	  background-color: /*#2980b9*/ #13437e;
+	  padding: 2rem 4rem;
+	  text-align: center;
+	  color: #fff;
+	  i {
+	    font-size: 100px;
+	  }
+	}
+
+	.sub-footer {
+	  background-color: /*#2980b9*/ #164D90;
+		padding: 25px 0px;
+	  text-align: center;
+	  color: #fff;
+	  i {
+	    font-size: 100px;
+	  }
+	}
+
+	.bg-white{
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	.remove-sides {
+		padding: 0px;
+	}
+	.no-margin-top {
+		margin-top: 0px;
+	}
+
+	h1 {
+		margin-top: 0px;
+	}
+	.full-width {
+		width: 100%;
+		height: 100%;
+	}
+	.footer-links {
+	  list-style-type: none;
+	  a {
+	    color: #fff;
+	    font-weight: 300;
+	    font-size: .8rem;
+	  }
+		margin-left: 0rem;
+	  li {
+	    margin-top: .5rem;
+	  }
+	}
+}
+
+.pad-wee-bit {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
