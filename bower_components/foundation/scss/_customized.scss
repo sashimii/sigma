@@ -407,9 +407,15 @@ h1.heading-colour a {
 	margin: 2px;
 }
 
+/* Address */
+
+address {
+	font-size: 0.8rem;
+}
+
 /* Fade in Classes */
 
-.logoFadeIn, .navFadeIn, .headingFadeIn { display: none; }
+.logoFadeIn, .navFadeIn, .headingFadeIn, .arrowFadeIn { display: none; }
 
 @media only screen and (max-width: 40em) {
 	#site-title {
@@ -513,6 +519,13 @@ h1.heading-colour a {
 	  li {
 	    margin-top: .5rem;
 	  }
+	}
+	.down-arrow {
+		margin-top: 250px;
+	}
+
+	.down-arrow-about {
+		margin-top: 50px;
 	}
 }
 
