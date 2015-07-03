@@ -340,9 +340,6 @@ h1.heading-colour a {
   padding: 2rem 4rem;
   text-align: center;
   color: #fff;
-  i {
-    font-size: 100px;
-  }
 }
 
 .sub-footer {
@@ -475,9 +472,6 @@ address {
 	  padding: 2rem 4rem;
 	  text-align: center;
 	  color: #fff;
-	  i {
-	    font-size: 100px;
-	  }
 	}
 
 	.sub-footer {
@@ -524,8 +518,31 @@ address {
 		margin-top: 250px;
 	}
 
+	.down-arrow-main {
+		margin-top: 100px;
+	}
+
 	.down-arrow-about {
 		margin-top: 50px;
+	}
+	.capabilities-margin-top {
+		margin-top: 150px;
+	}
+	.margin-top-50 {
+		margin-top: 50px !important;
+	}
+	.squeeze-top-more {
+		margin-top: -50px !important;
+	}
+	.mobile-v-centered {
+		padding-top: 125px !important;
+	}
+	.vertical-centered {
+		margin: 0px;
+		padding-top: 125px;
+	}
+	.small-screen-size-height {
+		height:1080px;
 	}
 }
 

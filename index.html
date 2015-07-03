@@ -16,8 +16,9 @@
   </head>
   <body>
     <div>
+      <a name="top"></a>
       <div class="quarter-transparent screen-size-height">
-        <nav class="top-bar transparent" data-topbar="">
+        <nav class="top-bar transparent show-for-medium-up" data-topbar="">
           <section class="top-bar-section">
             <ul class="left">
               <li>
@@ -46,8 +47,11 @@
           </section>
         </nav>
         <div class="row vertical-centered headingFadeIn" id="site-title">
-          <div class="large-6 medium-9 columns small-centered">
-            <h1 class="titling">
+          <div class="large-6 medium-9 small-12 columns small-centered">
+            <div class="small-7 columns small-centered show-for-small-only">
+              <img src="assets/logo.png" class="logoFadeIn show-for-small-only"/>
+            </div>
+            <h1 class="titling mobile-v-centered">
               <span class="blacken-font white">Turn Key Solutions</span>
             </h1>
             <h2 class="squeeze-top sub-titling">
@@ -60,7 +64,7 @@
             <div class="small-12 medium-6 columns small-centered">
               <p class="white thin-font capabilities">DESIGN / CNC MACHINERY / ASSEMBLY / PAINTING / FINISHING</p>
             </div>
-            <div class="small-12 columns show-for-small-only down-arrow">
+            <div class="small-12 columns show-for-small-only down-arrow-main">
               <div class="small-3 columns small-centered">
                 <a href="#about">
                   <button class="button button-large button-plain button-border button-circle text-center"><i class="fi-arrow-down"></i></button>
@@ -127,11 +131,11 @@
         </div>
       </div>
     </div>
-    <div ng-controller="SigmaController as sigma" name="capabilities">
-
-        <div class="small-12 medium-6 columns height-600px small-{{sigma.picture[sigma.pictureIndex].name}} remove-sides" ng-init="sigma.pictureIndex = 0">
+    <div ng-controller="SigmaController as sigma">
+        <div class="small-12 medium-6 columns height-600px small-{{sigma.picture[sigma.pictureIndex].name}} remove-sides screen-size-height" ng-init="sigma.pictureIndex = 0">
           <div class="transluscent-white full-width">
             <div class="small-12 medium-9 columns small-centered">
+              <a name="capabilities"></a>
               <h1 class="heading-colour text-right pad-top"><span class="thin-font">Our</span> <span class="blacken-font">Capabilities</span></h1>
               <ul class="tabs right" data-tab>
                 <li class="tab-title {{sigma.picture[0].tab}}"><a ng-click="sigma.switcheroo(0)">Materials</a></li>
@@ -146,6 +150,13 @@
                     <span class="radius secondary label padded" ng-repeat="item in sigma.picture[sigma.pictureIndex].items">{{item}}</span>
                   </p>
                 </div>
+              </div>
+            </div>
+            <div class="small-12 columns show-for-small-only down-arrow">
+              <div class="small-3 columns small-centered">
+                <a href="#quote">
+                  <button class="button button-large button-plain button-border button-circle text-center margin-top-50"><i class="fi-arrow-down"></i></button>
+                </a>
               </div>
             </div>
           </div>
@@ -163,11 +174,11 @@
       <div class="medium-6 columns show-for-medium-up" id="sigma">
 
       </div>
-      <div class="small-12 medium-6 columns height-600px bg-white small-illusion" name="quote">
+      <div class="small-12 medium-6 columns height-600px bg-white small-illusion remove-sides screen-size-height" name="quote">
         <!--<a name="quote"></a>-->
         <div class="small-10 medium-9 columns small-centered margin-top">
           <h1 class="heading-colour small-white"><span class="thin-font">Ask for a</span> <span class="blacken-font">Quote</span></h1>
-          <p class="text-justify small-white">
+          <p class="text-justify small-white margin-bottom">
             If you are looking for a quote, you may call or email us at:
           </p>
           <div class="small-12 columns button-margin">
@@ -179,6 +190,13 @@
             <span class="padding-left small-white">rfq@sigmametals.ca</span>
           </div>
         </div>
+        <div class="small-12 columns show-for-small-only down-arrow">
+          <div class="small-2 columns small-centered">
+            <a href="#footer">
+              <button class="button button-large button-plain button-border button-circle small-centered squeeze-top-more"><i class="fi-arrow-down"></i></button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="sub-footer small-blue small-12 columns">
@@ -188,7 +206,8 @@
         </div>
       </div>
     </div>
-    <footer class="footer small-blue small-12 columns">
+    <footer class="footer small-blue small-12 columns small-screen-size-height">
+      <a name="footer"></a>
       <div>
         <div class="small-12 medium-3 large-2 columns">
           <h4 class="medium-text-left">We are at</h4>
@@ -207,6 +226,15 @@
             <li><a href="mailto:btopiwala@sigmametals.ca" class="thin-font">Bhavesh Topiwala</a></li>
             <li><a href="mailto:jtopiwala@sigmametals.ca" class="thin-font">Jitesh Topiwala</a></li>
           <ul>
+        </div>
+      </div>
+
+      <!-- Mobile Arrow Up -->
+      <div class="small-12 columns show-for-small-only down-arrow">
+        <div class="small-3 columns small-centered">
+          <a href="#top">
+            <button class="button button-large button-plain button-border button-circle small-centered squeeze-top-more"><i class="fi-arrow-up small"></i></button>
+          </a>
         </div>
       </div>
     </footer>
